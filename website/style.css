@@ -1,0 +1,102 @@
+* {
+  font-family: "Open Sans";
+}
+
+#navbar {  
+  background-color: #DEA17C; 
+  width: 100%; 
+  color: white; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#pageHeading {
+  font-family: "Dancing Script", serif;
+  font-size: 2rem;
+  padding: 10px 10px 15px 15px;
+}
+  #desktopMenu {
+        display: none; /* Hide navigation menu button on desktop */
+     flex-grow: 0.75;
+    
+    
+    }
+    #desktopmenuItems {
+      display: flex;
+      flex-grow: 1;
+      justify-content: space-between;
+      
+       flex-direction: row;
+    }
+#mobileNavMenuButton {
+  color: white;
+  margin-right: 15px;
+}
+#footer {
+  background-color: #ddebd4;
+  width: 100%;
+  color: #333;
+  bottom: 0;
+  left: 0;
+  right: 0;
+ 
+}
+
+#staffPictures {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#mobileMenuDrawer {
+  display:none;
+  float: right;
+}
+
+{
+    font-family: "Dancing Script", serif;
+}
+
+#contactForm {
+  width: 1%;
+  margin: left;
+}
+
+/* Applies CSS rules to devices bigger than 768px*/
+@media only screen and (min-width: 768px) {
+   body { 
+       background-color: white;
+   }
+}
+
+/* Rules that apply ONLY to phones */
+@media only screen and (max-width : 768px) {
+    /* CSS rules go here... */
+  img {
+    width: 100%;
+  }
+}
+
+/* Rules that apply ONLY to tablets*/
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+     
+}
+
+/* Rules that apply ONLY to desktops*/
+@media only screen and (min-width : 1024px) {
+    /* CSS rules go here... */
+}
+
+/* Rules that apply ONLY to desktops*/
+@media only screen and (min-width : 1024px) {
+    #mobileNavMenuButton {
+        display: none; /* Hide navigation menu button on desktop */
+    }
+   #desktopMenu {
+        display: flex; /* Hide navigation menu button on desktop */
+    }
+  /* CSS rules go here... */
+}
